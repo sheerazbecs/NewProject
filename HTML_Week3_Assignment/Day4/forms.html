@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form Example</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <!-- Text input with label -->
+        <label for="studentname">Student Name:</label>
+        <input type="text" id="studentname" name="studentname">
+        <br><br>
+
+        <!-- Another text input -->
+        <label for="school">School Name:</label>
+        <input type="text" id="school" name="school">
+        <br><br>
+
+        <!-- Radio buttons - can select only ONE -->
+        <label>Select your grade:</label>
+        <br>
+        <input type="radio" id="grade1" name="grade" value="1">
+        <label for="grade1">Grade 1</label>
+        <br>
+        <input type="radio" id="grade2" name="grade" value="2">
+        <label for="grade2">Grade 2</label>
+        <br>
+        <input type="radio" id="grade3" name="grade" value="3">
+        <label for="grade3">Grade 3</label>
+        <br><br>
+
+        <!-- Checkboxes - can select MULTIPLE options -->
+        <label>Select your favorite subjects (you can choose more than one):</label>
+        <br>
+        <input type="checkbox" id="math" name="subject1" value="math">
+        <label for="math">Math</label>
+        <br>
+        <input type="checkbox" id="science" name="subject2" value="science">
+        <label for="science">Science</label>
+        <br>
+        <input type="checkbox" id="english" name="subject3" value="english">
+        <label for="english">English</label>
+        <br>
+        <input type="checkbox" id="art" name="subject4" value="art">
+        <label for="art">Art</label>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+</html>

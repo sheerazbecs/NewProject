@@ -1,0 +1,68 @@
+/* External CSS Stylesheet */
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Container to hold content and center it */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 10px 0;
+}
+
+/* Strong and Emphasis */
+strong {
+    color: #e74c3c;
+}
+
+em {
+    color: #16a085;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 2px solid #bdc3c7;
+    margin: 20px 0;
+}
+
+/* Link Hover Effect */
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* List Styling */
+ul li, ol li {
+    margin: 5px 0;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}

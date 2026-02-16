@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Header Section -->
+    <h1 style="color: #2c3e50; text-align: center; font-size: 2.5em;">Welcome to My Profile Page</h1>
+    <p style="text-align: center; font-size: 1.1em;">Hello! I'm Sheeraz, a beginner web developer learning HTML.</p>
+    <hr>
+   
+    <!-- About Me Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">About Me</h2>
+    <p>I'm passionate about technology and learning how to create websites. This is my first HTML page that I built from scratch!</p>
+    <p>I believe that <strong>practice makes perfect</strong> when learning to code. <em>Consistency is key!</em></p>
+   
+    <!-- Links Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Useful Resources</h2>
+    <p>Here are some websites I visit to learn coding:</p>
+    <p>
+        <a href="https://www.w3schools.com" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">Visit W3Schools</a> - Great for HTML tutorials
+    </p>
+    <p>
+        <a href="https://developer.mozilla.org" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">Visit MDN Web Docs</a> - Official web documentation
+    </p>
+   
+    <!-- Image Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">My Workspace</h2>
+    <p>This is where I do my coding practice:</p>
+    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80"
+         alt="A clean workspace with laptop and notebook"
+         width="400"
+         style="border: 3px solid #bdc3c7; border-radius: 8px; display: block; margin: 10px 0;">
+    <p><em>Image from Unsplash - represents a coding workspace</em></p>
+   
+    <!-- Lists Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">My Learning Goals</h2>
+    <h3 style="color: #7f8c8d;">What I want to learn:</h3>
+    <ul style="line-height: 1.8;">
+        <li>HTML (currently learning!)</li>
+        <li>CSS for styling</li>
+        <li>JavaScript for interactivity</li>
+        <li>Responsive web design</li>
+    </ul>
+   
+    <h3 style="color: #7f8c8d;">My Daily Coding Routine:</h3>
+    <ol style="line-height: 1.8;">
+        <li>Review HTML concepts (30 minutes)</li>
+        <li>Practice coding (1 hour)</li>
+        <li>Build a small project</li>
+        <li>Take notes for improvement</li>
+    </ol>
+   
+    <!-- Tables Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">My Weekly Study Schedule</h2>
+    <table border="1" width="80%" style="border-collapse: collapse; margin: 20px 0;">
+        <tr style="background-color: #3498db; color: white;">
+            <th style="padding: 10px;">Day</th>
+            <th style="padding: 10px;">Topic</th>
+            <th style="padding: 10px;">Time</th>
+        </tr>
+        <tr style="background-color: #ecf0f1;">
+            <td style="padding: 8px;">Monday</td>
+            <td style="padding: 8px;">HTML Basics</td>
+            <td style="padding: 8px;">6:00 PM - 7:00 PM</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Wednesday</td>
+            <td style="padding: 8px;">Forms & Tables</td>
+            <td style="padding: 8px;">6:00 PM - 7:30 PM</td>
+        </tr>
+        <tr style="background-color: #ecf0f1;">
+            <td style="padding: 8px;">Friday</td>
+            <td style="padding: 8px;">Project Building</td>
+            <td style="padding: 8px;">7:00 PM - 8:00 PM</td>
+        </tr>
+    </table>
+   
+    <!-- Forms Section -->
+    <h2 style="color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Contact Form</h2>
+    <p>Want to connect or share tips? Send me a message!</p>
+   
+    <form style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; max-width: 500px;">
+        <p>
+            <label for="name" style="font-weight: bold;">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #bdc3c7; border-radius: 4px;">
+        </p>
+       
+        <p>
+            <label for="email" style="font-weight: bold;">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #bdc3c7; border-radius: 4px;">
+        </p>
+       
+        <p>
+            <label for="topic" style="font-weight: bold;">Topic:</label><br>
+            <select id="topic" name="topic" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #bdc3c7; border-radius: 4px;">
+                <option value="">-- Select a topic --</option>
+                <option value="html">HTML Questions</option>
+                <option value="resources">Learning Resources</option>
+                <option value="collab">Collaboration</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+       
+        <p>
+            <label for="message" style="font-weight: bold;">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message here..." style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #bdc3c7; border-radius: 4px;"></textarea>
+        </p>
+       
+        <p>
+            <label>
+                <input type="checkbox" name="newsletter">
+                Subscribe to coding tips newsletter
+            </label>
+        </p>
+       
+        <p>
+            <button type="submit" style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;">Send Message</button>
+            <button type="reset" style="background-color: #95a5a6; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Clear Form</button>
+        </p>
+    </form>
+   
+    <!-- Footer -->
+    <hr>
+    <p style="text-align: center; color: #7f8c8d;">Created with basic HTML as a learning exercise</p>
+    <p style="text-align: center; color: #7f8c8d;">© 2023 My Learning Journey | <a href="#top" style="color: #3498db;">Back to Top</a></p>
+    </div>
+</body>
+</html>
