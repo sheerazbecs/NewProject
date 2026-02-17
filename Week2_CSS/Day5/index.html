@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>The Literary Catalog</title>
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+
+ <!-- Link to our separate CSS file -->
+ <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+ <!-- =============================================
+      1. HEADER  —  h1, p
+      NOTE: style="" below is INLINE CSS — written
+      directly on the HTML tag itself.
+      The rest of the styling comes from styles.css (EXTERNAL CSS).
+ ============================================== -->
+ <header>
+   <!-- INLINE CSS example: font-size and letter-spacing applied directly -->
+   <p style="font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;">Est. 2025 &nbsp;&middot;&nbsp; Curated Reads for the Discerning Mind</p>
+   <h1>The Literary <span>Catalog</span></h1>
+   <!-- INLINE CSS example: margin and font-style applied directly -->
+   <p style="margin-top: 12px; font-style: italic;"><em>A handpicked collection of the world's finest books &mdash; classical, contemporary, and everything in between.</em></p>
+ </header>
+
+
+ <!-- =============================================
+      2. NAVIGATION  —  nav, ul, li, a
+ ============================================== -->
+ <nav>
+   <ul>
+     <li><a href="#featured">Featured</a></li>
+     <li><a href="#catalog">Catalog</a></li>
+     <li><a href="#bestsellers">Best Sellers</a></li>
+     <li><a href="#genres">Genres</a></li>
+     <li><a href="#reading-list">Reading List</a></li>
+     <li><a href="#newsletter">Newsletter</a></li>
+   </ul>
+ </nav>
+
+
+ <!-- =============================================
+      3. FEATURED BOOK  —  h2, h3, h4, p, img, a, blockquote
+ ============================================== -->
+ <section id="featured">
+   <p class="label">Editor's Pick &middot; February 2026</p>
+   <h2>Book of the Month</h2>
+
+   <div class="featured-layout">
+
+     <!-- IMAGE -->
+     <img
+       src="https://covers.openlibrary.org/b/id/8739161-L.jpg"
+       alt="Cover of Middlemarch by George Eliot"
+     />
+
+     <!-- TEXT CONTENT -->
+     <div>
+       <span class="badge">Editor's Choice</span>
+
+       <h3>Middlemarch</h3>
+       <h4>George Eliot &nbsp;&middot;&nbsp; 1871&ndash;72</h4>
+
+       <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+
+       <p>
+         Often regarded as the greatest novel in the English language,
+         <em>Middlemarch</em> weaves the intertwined fates of Dorothea Brooke,
+         Tertius Lydgate, and the citizens of a provincial Midlands town into an
+         unmatched tapestry of human ambition, love, and disillusionment.
+       </p>
+
+       <blockquote>
+         "George Eliot's masterpiece stands alone &mdash; a novel of moral seriousness,
+         comic grace, and heartbreaking insight into the human condition."
+         <cite>&mdash; The Times Literary Supplement</cite>
+       </blockquote>
+
+       <p>
+         Read a free digital edition on
+         <a href="https://www.gutenberg.org/ebooks/145" target="_blank">Project Gutenberg &#8599;</a>
+         or learn more about the author on
+         <a href="https://en.wikipedia.org/wiki/George_Eliot" target="_blank">Wikipedia &#8599;</a>.
+       </p>
+
+       <a href="#newsletter" class="btn">Add to My List</a>
+       <a href="#catalog" class="btn btn-outline">Browse More</a>
+     </div>
+
+   </div>
+ </section>
+
+
+ <!-- =============================================
+      4. BOOK CATALOG  —  h2, h3, img, p
+ ============================================== -->
+ <section id="catalog">
+   <p class="label">Our Collection</p>
+   <h2>Browse the Catalog</h2>
+   <p>From ancient epics to modern novels, our catalog spans centuries of literary achievement.
+   Each title has been reviewed and selected for its lasting cultural significance.</p>
+   <br />
+
+   <div class="book-grid">
+
+     <div class="book-card">
+       <img src="https://covers.openlibrary.org/b/id/8739161-M.jpg" alt="Middlemarch" />
+       <div class="book-card-body">
+         <h3>Middlemarch</h3>
+         <p class="author">George Eliot</p>
+         <p class="genre">Victorian Fiction</p>
+       </div>
+     </div>
+
+     <div class="book-card">
+       <img src="https://covers.openlibrary.org/b/id/12888628-M.jpg" alt="Pride and Prejudice" />
+       <div class="book-card-body">
+         <h3>Pride &amp; Prejudice</h3>
+         <p class="author">Jane Austen</p>
+         <p class="genre">Regency Romance</p>
+       </div>
+     </div>
+
+     <div class="book-card">
+       <img src="https://covers.openlibrary.org/b/id/8228691-M.jpg" alt="Crime and Punishment" />
+       <div class="book-card-body">
+         <h3>Crime &amp; Punishment</h3>
+         <p class="author">Fyodor Dostoevsky</p>
+         <p class="genre">Psychological Fiction</p>
+       </div>
+     </div>
+
+   </div>
+ </section>
+
+
+ <!-- =============================================
+      5. BEST SELLERS TABLE  —  table, thead, tbody, tr, th, td
+ ============================================== -->
+ <section id="bestsellers">
+   <p class="label">Rankings &middot; This Week</p>
+   <h2>Best Sellers List</h2>
+
+   <div class="table-wrap">
+     <table>
+       <thead>
+         <tr>
+           <th>#</th>
+           <th>Title</th>
+           <th>Author</th>
+           <th>Genre</th>
+           <th>Year</th>
+           <th>Pages</th>
+           <th>Trend</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><span class="rank rank-gold">1</span></td>
+           <td><strong>Middlemarch</strong></td>
+           <td>George Eliot</td>
+           <td>Victorian Fiction</td>
+           <td>1872</td>
+           <td>904</td>
+           <td><span class="up">&#9650; +2</span></td>
+         </tr>
+         <tr>
+           <td><span class="rank">2</span></td>
+           <td><strong>Pride &amp; Prejudice</strong></td>
+           <td>Jane Austen</td>
+           <td>Regency Romance</td>
+           <td>1813</td>
+           <td>432</td>
+           <td><span class="same">&#8212; 0</span></td>
+         </tr>
+         <tr>
+           <td><span class="rank">3</span></td>
+           <td><strong>Crime &amp; Punishment</strong></td>
+           <td>F. Dostoevsky</td>
+           <td>Psychological</td>
+           <td>1866</td>
+           <td>551</td>
+           <td><span class="up">&#9650; +1</span></td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+ </section>
+
+
+ <!-- =============================================
+      6. GENRES + READING LIST  —  ul, ol, li
+ ============================================== -->
+ <section id="genres">
+   <div class="two-col">
+
+     <!-- Unordered List -->
+     <div>
+       <p class="label">Browse by Genre</p>
+       <h2>All Genres</h2>
+       <ul class="genre-list">
+         <li><a href="#">Victorian Fiction</a></li>
+         <li><a href="#">Magical Realism</a></li>
+         <li><a href="#">Psychological Thriller</a></li>
+       </ul>
+     </div>
+
+     <!-- Ordered List -->
+     <div id="reading-list">
+       <p class="label">Must Read &middot; Curated</p>
+       <h2>Reading List</h2>
+       <ol class="reading-list">
+         <li>Middlemarch &mdash; George Eliot</li>
+         <li>War and Peace &mdash; Leo Tolstoy</li>
+         <li>Don Quixote &mdash; Miguel de Cervantes</li>
+       </ol>
+     </div>
+
+   </div>
+ </section>
+
+
+ <!-- =============================================
+      7. NEWSLETTER FORM  —  input, select, checkbox, radio, button
+ ============================================== -->
+ <section id="newsletter">
+   <p class="label">Stay Connected</p>
+   <!-- INLINE CSS example: text-align and color applied directly on this tag -->
+   <h2 style="text-align: center; color: #1a110a;">Join Our Reading Circle</h2>
+   <!-- INLINE CSS example: max-width and margin applied directly -->
+   <p style="max-width: 500px; margin: 0 auto 36px auto; text-align: center;">Get our monthly book recommendation, curated reading lists, and literary news delivered straight to your inbox.</p>
+   <br />
+
+   <div class="form-card">
+     <h3>Newsletter Sign-Up</h3>
+     <br />
+
+     <!-- Two inputs side by side -->
+     <div class="form-row">
+       <div class="form-group">
+         <label for="first-name">First Name</label>
+         <input type="text" id="first-name" placeholder="Elizabeth" />
+       </div>
+       <div class="form-group">
+         <label for="last-name">Last Name</label>
+         <input type="text" id="last-name" placeholder="Bennet" />
+       </div>
+     </div>
+
+     <!-- Email input -->
+     <div class="form-group">
+       <label for="email">Email Address</label>
+       <input type="email" id="email" placeholder="you@example.com" />
+     </div>
+
+     <!-- Select dropdown -->
+     <div class="form-group">
+       <label for="frequency">Email Frequency</label>
+       <select id="frequency">
+         <option value="">— Select frequency —</option>
+         <option value="weekly">Weekly Digest</option>
+         <option value="monthly">Monthly Newsletter</option>
+         <option value="quarterly">Quarterly Roundup</option>
+       </select>
+     </div>
+
+     <!-- Checkboxes -->
+     <div class="form-group">
+       <label>Preferred Genres</label>
+       <div class="radio-group">
+         <label><input type="checkbox" value="fiction" /> Fiction</label>
+         <label><input type="checkbox" value="nonfiction" /> Non-Fiction</label>
+         <label><input type="checkbox" value="poetry" /> Poetry</label>
+         <label><input type="checkbox" value="history" /> History</label>
+         <label><input type="checkbox" value="philosophy" /> Philosophy</label>
+       </div>
+     </div>
+
+     <!-- Radio buttons -->
+     <div class="form-group">
+       <label>Reading Level</label>
+       <div class="radio-group">
+         <label><input type="radio" name="level" value="casual" /> Casual Reader</label>
+         <label><input type="radio" name="level" value="avid" /> Avid Reader</label>
+         <label><input type="radio" name="level" value="scholar" /> Scholar</label>
+       </div>
+     </div>
+
+     <!-- Button -->
+     <button type="button" class="btn">Subscribe Now &rarr;</button>
+   </div>
+ </section>
+
+
+ <!-- =============================================
+      9. FOOTER  —  h3, p, ul, li, a, hr
+ ============================================== -->
+ <footer>
+   <h3>The Literary Catalog</h3>
+   <p><em>Curated reads for the discerning mind &middot; Est. 2025</em></p>
+
+   <ul>
+     <li><a href="#featured">Featured</a></li>
+     <li><a href="#catalog">Catalog</a></li>
+     <li><a href="#bestsellers">Best Sellers</a></li>
+     <li><a href="#genres">Genres</a></li>
+     <li><a href="#newsletter">Newsletter</a></li>
+   </ul>
+
+   <hr />
+
+   <p class="copyright">
+     &copy; 2026 The Literary Catalog &middot; All rights reserved &middot;
+     <a href="#" style="color:#d4b896;">Privacy Policy</a> &middot;
+     <a href="#" style="color:#d4b896;">Terms of Use</a>
+   </p>
+ </footer>
+
+
+</body>
+</html>

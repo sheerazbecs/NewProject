@@ -1,0 +1,475 @@
+/* ================================================
+  styles.css — The Literary Catalog
+  This file contains ALL the styling for index.html
+================================================ */
+
+
+/* ---- Page Background & Default Font ---- */
+body {
+ background-color: #faf6ef;
+ color: #1a110a;
+ font-family: Georgia, serif;
+ font-size: 17px;
+ line-height: 1.7;
+ margin: 0;
+ padding: 0;
+}
+
+/* ---- Links ---- */
+a {
+ color: #8b3a1e;
+ text-decoration: none;
+}
+a:hover {
+ color: #c9993a;
+ text-decoration: underline;
+}
+
+
+/* ================================================
+  HEADER
+================================================ */
+header {
+ background-color: #1a110a;
+ color: #f5ede0;
+ text-align: center;
+ padding: 50px 20px 40px;
+ border-bottom: 5px solid #c9993a;
+}
+header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 3rem;
+ margin: 0 0 10px 0;
+ color: #f5ede0;
+}
+header h1 span {
+ color: #c9993a;
+}
+header p {
+ font-style: italic;
+ color: #d4b896;
+ margin: 0;
+}
+
+
+/* ================================================
+  NAVIGATION BAR
+================================================ */
+nav {
+ background-color: #f0e6d3;
+ border-bottom: 2px solid #d4b896;
+ text-align: center;
+ padding: 10px 0;
+}
+nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: flex;                /* FLEXBOX: nav links in a row */
+ flex-wrap: wrap;              /* FLEXBOX: wraps to next line on small screens */
+ justify-content: center;     /* FLEXBOX: centers the nav links */
+ align-items: center;         /* FLEXBOX: vertically centers the links */
+}
+nav ul li {
+ margin: 0 4px;  /* small gap between each nav item */
+}
+nav ul li a {
+ display: inline-block;
+ padding: 8px 16px;
+ color: #1a110a;
+ font-size: 0.82rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ border-bottom: 3px solid transparent;
+}
+nav ul li a:hover {
+ color: #8b3a1e;
+ border-bottom: 3px solid #8b3a1e;
+ text-decoration: none;
+}
+
+
+/* ================================================
+  SECTIONS — shared layout
+================================================ */
+section {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 30px 24px;
+ border-bottom: 1px solid #d4b896;
+}
+
+/* Small label above headings */
+.label {
+ font-size: 0.72rem;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: #c9993a;
+ margin-bottom: 6px;
+}
+
+
+/* ================================================
+  HEADINGS
+================================================ */
+h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin: 0 0 24px 0;
+}
+h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.3rem;
+ margin: 0 0 4px 0;
+}
+h4 {
+ font-style: italic;
+ color: #8b3a1e;
+ font-weight: normal;
+ margin: 0 0 12px 0;
+}
+
+
+/* ================================================
+  FEATURED BOOK SECTION
+  FLEXBOX: display:flex, justify-content, align-items, gap
+================================================ */
+.featured-layout {
+ display: flex;                 /* turns container into a flexbox */
+ justify-content: flex-start;  /* aligns children horizontally (left) */
+ align-items: flex-start;      /* aligns children vertically (top) */
+ gap: 48px;                    /* space between image and text */
+}
+.featured-layout img {
+ width: 200px;
+ border-radius: 4px 10px 10px 4px;
+ box-shadow: 8px 10px 25px rgba(0, 0, 0, 0.2);
+ transition: transform 0.3s;
+}
+.featured-layout img:hover {
+ transform: scale(1.04);
+}
+.badge {
+ display: inline-block;
+ background-color: #8b3a1e;
+ color: white;
+ font-size: 0.65rem;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ padding: 4px 12px;
+ border-radius: 2px;
+ margin-bottom: 10px;
+}
+.stars {
+ color: #c9993a;
+ font-size: 1.1rem;
+ margin-bottom: 12px;
+}
+blockquote {
+ border-left: 4px solid #c9993a;
+ background-color: #f0e6d3;
+ padding: 12px 20px;
+ margin: 16px 0;
+ font-style: italic;
+ border-radius: 0 6px 6px 0;
+}
+blockquote cite {
+ display: block;
+ margin-top: 8px;
+ font-style: normal;
+ font-size: 0.82rem;
+ color: #c9993a;
+}
+
+
+/* ================================================
+  BUTTONS
+================================================ */
+.btn {
+ display: inline-block;
+ padding: 12px 28px;
+ background-color: #8b3a1e;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ font-size: 0.8rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ cursor: pointer;
+ margin-right: 10px;
+ margin-top: 10px;
+ text-decoration: none;
+}
+.btn:hover {
+ background-color: #6e2e17;
+ color: white;
+ text-decoration: none;
+}
+.btn-outline {
+ background-color: transparent;
+ color: #8b3a1e;
+ border: 2px solid #8b3a1e;
+}
+.btn-outline:hover {
+ background-color: #8b3a1e;
+ color: white;
+}
+
+
+/* ================================================
+  BOOK CATALOG GRID
+================================================ */
+.book-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 28px;
+}
+.book-card {
+ background-color: #f0e6d3;
+ border: 1px solid #d4b896;
+ border-radius: 8px;
+ overflow: hidden;
+ transition: transform 0.25s, box-shadow 0.25s;
+}
+.book-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.book-card img {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ display: block;
+}
+.book-card-body {
+ padding: 14px;
+}
+.book-card-body h3 {
+ font-size: 1rem;
+ margin-bottom: 2px;
+}
+.book-card-body .author {
+ font-size: 0.85rem;
+ font-style: italic;
+ color: #8b3a1e;
+}
+.book-card-body .genre {
+ font-size: 0.68rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ color: #999;
+ margin-top: 6px;
+}
+
+
+/* ================================================
+  BEST SELLERS TABLE
+================================================ */
+.table-wrap {
+ overflow-x: auto;
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.93rem;
+}
+thead tr {
+ background-color: #1a110a;
+ color: #f5ede0;
+}
+th {
+ padding: 13px 16px;
+ text-align: left;
+ font-size: 0.7rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+}
+td {
+ padding: 13px 16px;
+ border-bottom: 1px solid #d4b896;
+}
+tbody tr:nth-child(even) { background-color: #f0e6d3; }
+tbody tr:hover           { background-color: #e8d9c3; }
+
+.rank      { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #d4b896; }
+.rank-gold { color: #c9993a; }
+.up        { color: #4a7c59; font-size: 0.82rem; }
+.down      { color: #8b3a1e; font-size: 0.82rem; }
+.same      { color: #999;    font-size: 0.82rem; }
+
+
+/* ================================================
+  GENRES + READING LIST — two columns
+================================================ */
+.two-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 60px;
+}
+
+/* Unordered list */
+.genre-list {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+.genre-list li {
+ padding: 7px 0;
+ border-bottom: 1px dashed #d4b896;
+}
+.genre-list li::before {
+ content: "§ ";
+ color: #c9993a;
+ font-weight: bold;
+}
+
+/* Ordered list */
+ol.reading-list {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ counter-reset: reading;
+}
+ol.reading-list li {
+ counter-increment: reading;
+ display: flex;
+ gap: 14px;
+ padding: 9px 0;
+ border-bottom: 1px solid #e4d8c8;
+}
+ol.reading-list li::before {
+ content: counter(reading, upper-roman);
+ font-family: 'Playfair Display', serif;
+ color: #c9993a;
+ min-width: 34px;
+ text-align: right;
+}
+
+
+/* ================================================
+  FORMS
+================================================ */
+.form-card {
+ background-color: #f0e6d3;
+ border: 1px solid #d4b896;
+ border-radius: 10px;
+ padding: 40px;
+ max-width: 600px;
+ margin: 0 auto;
+ box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+ margin-bottom: 20px;
+}
+label {
+ display: block;
+ font-size: 0.72rem;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ margin-bottom: 7px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+ width: 100%;
+ padding: 11px 14px;
+ border: 1.5px solid #d4b896;
+ border-radius: 5px;
+ background-color: #faf6ef;
+ font-family: Georgia, serif;
+ font-size: 0.95rem;
+ color: #1a110a;
+ outline: none;
+ box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus {
+ border-color: #8b3a1e;
+ box-shadow: 0 0 0 3px rgba(139, 58, 30, 0.1);
+}
+textarea {
+ resize: vertical;
+ min-height: 90px;
+}
+.form-row {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 18px;
+}
+.radio-group {
+ display: flex;                    /* turns container into a flexbox */
+ flex-wrap: wrap;                  /* wraps items to next line if no space */
+ justify-content: flex-start;     /* aligns items from the left */
+ align-items: center;             /* vertically centers the checkboxes & labels */
+ gap: 14px;                       /* space between each checkbox/radio item */
+}
+.radio-group label {
+ font-size: 0.95rem;
+ text-transform: none;
+ letter-spacing: 0;
+ font-style: italic;
+ display: flex;
+ align-items: center;
+ gap: 7px;
+ cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+ width: 16px;
+ height: 16px;
+ accent-color: #8b3a1e;
+}
+
+
+/* ================================================
+  FOOTER
+================================================ */
+footer {
+ background-color: #1a110a;
+ color: #d4b896;
+ text-align: center;
+ padding: 20px 20px;
+}
+footer h3 {
+ color: #f5ede0;
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-style: italic;
+ margin-bottom: 10px;
+}
+footer p {
+ font-size: 0.88rem;
+ margin: 6px 0;
+}
+footer ul {
+ list-style: none;
+ padding: 8px 0;
+ margin: 0;
+}
+footer ul li {
+ display: inline-block;
+ margin: 0 8px;
+}
+footer ul li a {
+ color: #d4b896;
+ font-size: 0.78rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+}
+footer ul li a:hover {
+ color: #c9993a;
+ text-decoration: none;
+}
+footer hr {
+ border: none;
+ border-top: 1px solid #3a2a1e;
+ max-width: 400px;
+ margin: 10px auto;
+}
+.copyright {
+ font-size: 0.78rem;
+ color: #6b5040;
+}

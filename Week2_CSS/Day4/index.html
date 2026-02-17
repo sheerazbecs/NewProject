@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Flexbox Basics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation with Flexbox -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#bestsellers">Best Sellers</a></li>
+            <li><a href="#genres">Genres</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Featured Layout with Flexbox -->
+    <section id="featured">
+        <div class="featured-layout">
+            <img src="https://covers.openlibrary.org/b/id/8739161-L.jpg" alt="Middlemarch" />
+            <div class="featured-content">
+                <h2>Middlemarch</h2>
+                <p>George Eliot · 1871–72</p>
+                <p>Often regarded as the greatest novel in the English language.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Cards with Flexbox -->
+    <section id="catalog">
+        <h2>Book Catalog</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Middlemarch</h3>
+                <p>George Eliot</p>
+            </div>
+            <div class="card">
+                <h3>Pride & Prejudice</h3>
+                <p>Jane Austen</p>
+            </div>
+            <div class="card">
+                <h3>Crime & Punishment</h3>
+                <p>F. Dostoevsky</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Row with Flexbox -->
+    <section id="newsletter">
+        <h2>Newsletter Sign-Up</h2>
+        <div class="form-row">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="radio-group">
+            <label><input type="checkbox" /> Fiction</label>
+            <label><input type="checkbox" /> Non-Fiction</label>
+            <label><input type="checkbox" /> Poetry</label>
+        </div>
+    </section>
+
+    <!-- Two Column Layout with Flexbox -->
+    <section id="genres">
+        <div class="two-col">
+            <div class="col">
+                <h3>Genres</h3>
+                <ul>
+                    <li>Victorian Fiction</li>
+                    <li>Magical Realism</li>
+                    <li>Psychological</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Reading List</h3>
+                <ol>
+                    <li>Middlemarch</li>
+                    <li>War and Peace</li>
+                    <li>Don Quixote</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Flexbox -->
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>© 2026 The Literary Catalog</p>
+    </footer>
+</body>
+</html>

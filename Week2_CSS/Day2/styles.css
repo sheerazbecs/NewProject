@@ -1,0 +1,108 @@
+/* ================================================
+   DAY 2 - COLORS, FONTS & TEXT STYLING
+================================================ */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    background-color: #faf6ef;
+    color: #1a110a;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 20px;
+}
+
+/* Header Styles */
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #c9993a;
+}
+
+/* Navigation Styles */
+nav ul li a {
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8b3a1e;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #c9993a;
+    text-decoration: underline;
+}
+
+/* Color Property */
+.color-rust {
+    color: #8b3a1e;
+}
+
+.color-gold {
+    color: #c9993a;
+}
+
+/* Background Color Property */
+.bg-cream {
+    background-color: #f0e6d3;
+    padding: 8px;
+}
+
+/* Font Family Properties */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+
+.font-georgia {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+}
+
+/* Font Weight Property */
+.text-bold {
+    font-weight: bold;
+}
+
+/* Font Style Property */
+.text-italic {
+    font-style: italic;
+}
+
+/* Text Transform Property */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Text Align Property */
+.text-center {
+    text-align: center;
+}
+
+/* Letter Spacing Property */
+.text-spacing {
+    letter-spacing: 4px;
+}
+
+/* Line Height Property */
+.text-lineheight {
+    line-height: 2.5;
+    color: #5a3d28;
+}
+
+/* Footer Styles */
+footer p {
+    color: #c9993a;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: italic;
+}

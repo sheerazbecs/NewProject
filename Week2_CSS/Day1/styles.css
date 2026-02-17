@@ -1,0 +1,114 @@
+/* ================================================
+   day1.css — The Literary Catalog
+   TOPIC: What is CSS? External CSS
+   
+   This file is linked in day1.html using:
+   <link rel="stylesheet" href="day1.css" />
+   
+   Everything written here is EXTERNAL CSS.
+================================================ */
+
+
+/* Styles the entire page */
+body {
+  background-color: #faf6ef;
+  color: #1a110a;
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+/* Styles the header */
+header {
+  background-color: #1a110a;
+  color: #f5ede0;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #c9993a;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f5ede0;
+}
+
+header h1 span {
+  color: #c9993a;
+}
+
+/* Styles the nav bar */
+nav {
+  background-color: #f0e6d3;
+  border-bottom: 2px solid #d4b896;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #1a110a;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* Styles each section */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  border-bottom: 1px solid #d4b896;
+}
+
+/* Small label */
+.label {
+  color: #c9993a;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #1a110a;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  color: #8b3a1e;
+}
+
+h4 {
+  font-style: italic;
+  color: #8b3a1e;
+  font-weight: normal;
+}
+
+img {
+  width: 150px;
+  margin-bottom: 16px;
+}
+
+/* Styles the footer */
+footer {
+  background-color: #1a110a;
+  color: #d4b896;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer h3 {
+  color: #f5ede0;
+  font-style: italic;
+}

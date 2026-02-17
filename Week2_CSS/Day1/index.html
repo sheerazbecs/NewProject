@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 1 - Inline vs External CSS</title>
+
+  <!--
+    DAY 1 TOPIC: What is CSS? Inline vs External CSS
+
+    There are 3 ways to write CSS:
+    1. INLINE CSS   — written directly on the HTML tag using style=""
+    2. INTERNAL CSS — written inside <style> tag in <head>
+    3. EXTERNAL CSS — written in a separate .css file and linked here
+    
+    Today we use: INLINE + EXTERNAL (linked below)
+  -->
+
+  <!-- EXTERNAL CSS: linking our separate css file -->
+  <link rel="stylesheet" href="day1.css" />
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <!-- INLINE CSS: style written directly on this tag -->
+    <p style="font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;">
+      Est. 2025 · Curated Reads for the Discerning Mind
+    </p>
+    <h1>The Literary <span>Catalog</span></h1>
+    <!-- INLINE CSS: margin and font-style written directly -->
+    <p style="margin-top: 12px; font-style: italic;">
+      A handpicked collection of the world's finest books.
+    </p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#catalog">Catalog</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION: explaining CSS -->
+  <section>
+    <h2>What is CSS?</h2>
+    <p>
+      CSS stands for <strong>Cascading Style Sheets</strong>. It is used to
+      style and layout HTML elements — for example, changing colors, fonts,
+      spacing, and positioning.
+    </p>
+
+    <h3>1. Inline CSS</h3>
+    <p>Written directly on the HTML tag using the <strong>style=""</strong> attribute.</p>
+    <!-- INLINE CSS examples shown visually -->
+    <p style="color: #8b3a1e; font-size: 1.1rem;">
+      This paragraph uses INLINE CSS — color and font-size written on the tag.
+    </p>
+    <p style="background-color: #f0e6d3; padding: 10px; border-left: 4px solid #c9993a;">
+      This paragraph also uses INLINE CSS — background, padding, border-left.
+    </p>
+
+    <h3>2. External CSS</h3>
+    <p>
+      Written in a separate <strong>.css file</strong> and linked in the
+      &lt;head&gt; using &lt;link rel="stylesheet" href="day1.css" /&gt;.
+      The header, nav, and this section are all styled using external CSS.
+    </p>
+  </section>
+
+  <!-- FEATURED BOOK -->
+  <section id="featured">
+    <p class="label">Editor's Pick · February 2026</p>
+    <h2>Book of the Month</h2>
+    <img
+      src="https://covers.openlibrary.org/b/id/8739161-L.jpg"
+      alt="Cover of Middlemarch by George Eliot"
+    />
+    <h3>Middlemarch</h3>
+    <h4>George Eliot · 1871–72</h4>
+    <p>
+      Often regarded as the greatest novel in the English language,
+      <em>Middlemarch</em> is an unmatched tapestry of human ambition,
+      love, and disillusionment.
+    </p>
+    <!-- INLINE CSS on link -->
+    <a href="#" style="color: #8b3a1e; font-weight: bold;">Read More →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>The Literary Catalog</h3>
+    <p>© 2026 All rights reserved</p>
+  </footer>
+
+</body>
+</html>
