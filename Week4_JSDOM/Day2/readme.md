@@ -1,0 +1,3 @@
+DOM - Selecting Elements
+
+This project demonstrates how to select HTML elements using JavaScript DOM methods. A webpage displays student, teacher, and subject information inside HTML elements. When the user clicks the "Run All Selections" button, JavaScript uses different selection methods like getElementById, getElementsByClassName, getElementsByTagName, getElementsByName, querySelector, and querySelectorAll to access those elements and print the results in the output box — showing how each method works and what it returns.
