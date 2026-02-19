@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Form Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>DOM - Form Validation</h1>
+
+  <!-- NAME VALIDATION -->
+  <div class="box">
+    <h2>Name Validation</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="validateName()">Check</button>
+    <p id="nameOutput"></p>
+  </div>
+
+  <!-- AGE VALIDATION -->
+  <div class="box">
+    <h2>Age Validation</h2>
+    <input type="number" id="ageInput" placeholder="Enter your age">
+    <button onclick="validateAge()">Check</button>
+    <p id="ageOutput"></p>
+  </div>
+
+  <!-- EMAIL VALIDATION -->
+  <div class="box">
+    <h2>Email Validation</h2>
+    <input type="text" id="emailInput" placeholder="Enter your email">
+    <button onclick="validateEmail()">Check</button>
+    <p id="emailOutput"></p>
+  </div>
+
+  <!-- PASSWORD VALIDATION -->
+  <div class="box">
+    <h2>Password Validation</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password (min 8 chars)">
+    <button onclick="validatePassword()">Check</button>
+    <p id="passwordOutput"></p>
+  </div>
+
+  <!-- FULL REGISTRATION FORM -->
+  <div class="box">
+    <h2>Full Registration Form</h2>
+    <input type="text" id="regName" placeholder="Full Name">
+    <input type="text" id="regEmail" placeholder="Email Address">
+    <input type="number" id="regAge" placeholder="Age">
+    <input type="password" id="regPassword" placeholder="Password">
+    <button onclick="validateForm()">Register</button>
+    <p id="formOutput"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
