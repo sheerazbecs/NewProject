@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern JS — Day 5 Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+
+  <!-- Page Header -->
+  <header>
+    <div class="badge">Day 5 · Practice &amp; Review</div>
+    <h1>Modern JavaScript<br/>All Days Combined</h1>
+    <p>ES6 · Arrow Functions · Arrays &amp; Objects · Destructuring</p>
+  </header>
+
+
+  <!-- ====================================
+       SECTION 1 — Day 1 : ES6 Basics
+  ===================================== -->
+  <div class="section open" id="s1">
+
+    <div class="section-header" onclick="toggle('s1')">
+      <span class="day-tag tag-1">Day 1</span>
+      <h2>ES6 Basics — let, const, template literals, spread</h2>
+      <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-body">
+
+      <p class="note">
+        Topics covered:
+        <span class="concept">let</span>
+        <span class="concept">const</span>
+        <span class="concept">template literals</span>
+        <span class="concept">spread ...</span>
+        <span class="concept">default params</span>
+      </p>
+
+      <!-- Reference example for the student to read -->
+      <div class="code-block"><span class="cmt">// const = value that will NOT change</span>
+<span class="kw">const</span> <span class="var">city</span> <span class="op">=</span> <span class="str">"Karachi"</span>;
+
+<span class="cmt">// let = value that CAN change</span>
+<span class="kw">let</span> <span class="var">score</span> <span class="op">=</span> <span class="num">10</span>;
+<span class="var">score</span> <span class="op">=</span> <span class="num">20</span>;   <span class="cmt">// allowed</span>
+
+<span class="cmt">// Template literal - use backtick ` and ${ } for variables</span>
+<span class="kw">let</span> <span class="var">msg</span> <span class="op">=</span> <span class="str">`I live in <span class="op">${</span><span class="var">city</span><span class="op">}</span> and my score is <span class="op">${</span><span class="var">score</span><span class="op">}</span>`</span>;
+
+<span class="cmt">// Spread ... copies items from an array</span>
+<span class="kw">let</span> <span class="var">a</span> <span class="op">=</span> [<span class="num">1</span>, <span class="num">2</span>];
+<span class="kw">let</span> <span class="var">b</span> <span class="op">=</span> [<span class="num">3</span>, <span class="num">4</span>];
+<span class="kw">let</span> <span class="var">combined</span> <span class="op">=</span> [...<span class="var">a</span>, ...<span class="var">b</span>];  <span class="cmt">// [1, 2, 3, 4]</span>
+
+<span class="cmt">// Default parameter - used when nothing is passed in</span>
+<span class="kw">function</span> <span class="fn">greet</span>(<span class="var">name</span> <span class="op">=</span> <span class="str">"Guest"</span>) {
+    <span class="kw">return</span> <span class="str">"Hello "</span> <span class="op">+</span> <span class="var">name</span>;
+}</div>
+
+      <div class="practice-label">✏️ Your turn — edit the code and click Run</div>
+      <textarea id="t1"></textarea>
+
+      <div class="btn-row">
+        <button class="btn-run"   onclick="runCode('t1', 'o1')">▶ Run</button>
+        <button class="btn-reset" onclick="resetCode('t1', 1)">↺ Reset</button>
+        <button class="btn-hint"  onclick="toggleHint('h1')">💡 Hint</button>
+      </div>
+
+      <div class="hint-box" id="h1">
+💡 Template literal uses backtick ` not a normal quote
+💡 Put variables inside ${ } like: `Hello ${name}`
+💡 Spread copies items: [...arr1, ...arr2]
+💡 Default param: function greet(name = "Guest") { }</div>
+
+      <div class="output info" id="o1">// Output will appear here...</div>
+
+    </div>
+  </div>
+
+
+  <!-- ====================================
+       SECTION 2 — Day 2 : Arrow Functions
+  ===================================== -->
+  <div class="section" id="s2">
+
+    <div class="section-header" onclick="toggle('s2')">
+      <span class="day-tag tag-2">Day 2</span>
+      <h2>Arrow Functions — shorter way to write functions</h2>
+      <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-body">
+
+      <p class="note">
+        Topics covered:
+        <span class="concept">() =&gt; {}</span>
+        <span class="concept">implicit return</span>
+        <span class="concept">single param</span>
+        <span class="concept">arrow as callback</span>
+      </p>
+
+      <div class="code-block"><span class="cmt">// Old way - normal function</span>
+<span class="kw">function</span> <span class="fn">add</span>(<span class="var">a</span>, <span class="var">b</span>) {
+    <span class="kw">return</span> <span class="var">a</span> <span class="op">+</span> <span class="var">b</span>;
+}
+
+<span class="cmt">// New way - arrow function (same result, less typing)</span>
+<span class="kw">const</span> <span class="fn">add</span> <span class="op">=</span> (<span class="var">a</span>, <span class="var">b</span>) <span class="op">=></span> <span class="var">a</span> <span class="op">+</span> <span class="var">b</span>;
+
+<span class="cmt">// One parameter - brackets not needed</span>
+<span class="kw">const</span> <span class="fn">double</span> <span class="op">=</span> <span class="var">num</span> <span class="op">=></span> <span class="var">num</span> <span class="op">*</span> <span class="num">2</span>;
+
+<span class="cmt">// No parameters - use empty brackets</span>
+<span class="kw">const</span> <span class="fn">sayHello</span> <span class="op">=</span> () <span class="op">=></span> <span class="str">"Hello!"</span>;
+
+<span class="cmt">// Arrow function inside .map()</span>
+<span class="kw">let</span> <span class="var">nums</span> <span class="op">=</span> [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>];
+<span class="kw">let</span> <span class="var">result</span> <span class="op">=</span> <span class="var">nums</span>.<span class="fn">map</span>(<span class="var">n</span> <span class="op">=></span> <span class="var">n</span> <span class="op">*</span> <span class="num">10</span>);  <span class="cmt">// [10, 20, 30]</span></div>
+
+      <div class="practice-label">✏️ Your turn — edit the code and click Run</div>
+      <textarea id="t2"></textarea>
+
+      <div class="btn-row">
+        <button class="btn-run"   onclick="runCode('t2', 'o2')">▶ Run</button>
+        <button class="btn-reset" onclick="resetCode('t2', 2)">↺ Reset</button>
+        <button class="btn-hint"  onclick="toggleHint('h2')">💡 Hint</button>
+      </div>
+
+      <div class="hint-box" id="h2">
+💡 Arrow function: const name = (params) => result
+💡 If one line, no need for { } or the word return
+💡 One param only: const fn = x => x * 2
+💡 No params: const fn = () => "hello"</div>
+
+      <div class="output info" id="o2">// Output will appear here...</div>
+
+    </div>
+  </div>
+
+
+  <!-- ====================================
+       SECTION 3 — Day 3 : Arrays & Objects
+  ===================================== -->
+  <div class="section" id="s3">
+
+    <div class="section-header" onclick="toggle('s3')">
+      <span class="day-tag tag-3">Day 3</span>
+      <h2>Arrays &amp; Objects — map, filter, reduce, find</h2>
+      <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-body">
+
+      <p class="note">
+        Topics covered:
+        <span class="concept">.map()</span>
+        <span class="concept">.filter()</span>
+        <span class="concept">.reduce()</span>
+        <span class="concept">.find()</span>
+      </p>
+
+      <div class="code-block"><span class="kw">let</span> <span class="var">numbers</span> <span class="op">=</span> [<span class="num">10</span>, <span class="num">20</span>, <span class="num">30</span>, <span class="num">40</span>];
+
+<span class="cmt">// .map() - transform every item, get a new array</span>
+<span class="kw">let</span> <span class="var">doubled</span> <span class="op">=</span> <span class="var">numbers</span>.<span class="fn">map</span>(<span class="kw">function</span>(<span class="var">n</span>) {
+    <span class="kw">return</span> <span class="var">n</span> <span class="op">*</span> <span class="num">2</span>;
+});  <span class="cmt">// [20, 40, 60, 80]</span>
+
+<span class="cmt">// .filter() - keep only items that pass the test</span>
+<span class="kw">let</span> <span class="var">big</span> <span class="op">=</span> <span class="var">numbers</span>.<span class="fn">filter</span>(<span class="kw">function</span>(<span class="var">n</span>) {
+    <span class="kw">return</span> <span class="var">n</span> <span class="op">></span> <span class="num">15</span>;
+});  <span class="cmt">// [20, 30, 40]</span>
+
+<span class="cmt">// .reduce() - combine all items into ONE value</span>
+<span class="kw">let</span> <span class="var">total</span> <span class="op">=</span> <span class="var">numbers</span>.<span class="fn">reduce</span>(<span class="kw">function</span>(<span class="var">sum</span>, <span class="var">n</span>) {
+    <span class="kw">return</span> <span class="var">sum</span> <span class="op">+</span> <span class="var">n</span>;
+}, <span class="num">0</span>);  <span class="cmt">// 100</span>
+
+<span class="cmt">// .find() - get the FIRST item that matches</span>
+<span class="kw">let</span> <span class="var">found</span> <span class="op">=</span> <span class="var">numbers</span>.<span class="fn">find</span>(<span class="kw">function</span>(<span class="var">n</span>) {
+    <span class="kw">return</span> <span class="var">n</span> <span class="op">></span> <span class="num">25</span>;
+});  <span class="cmt">// 30</span></div>
+
+      <div class="practice-label">✏️ Your turn — edit the code and click Run</div>
+      <textarea id="t3"></textarea>
+
+      <div class="btn-row">
+        <button class="btn-run"   onclick="runCode('t3', 'o3')">▶ Run</button>
+        <button class="btn-reset" onclick="resetCode('t3', 3)">↺ Reset</button>
+        <button class="btn-hint"  onclick="toggleHint('h3')">💡 Hint</button>
+      </div>
+
+      <div class="hint-box" id="h3">
+💡 .map() → changes each item, returns NEW array (same length)
+💡 .filter() → keeps items where condition is TRUE
+💡 .reduce() → starts from 0, adds each item to sum
+💡 .find() → returns only the FIRST match, not an array</div>
+
+      <div class="output info" id="o3">// Output will appear here...</div>
+
+    </div>
+  </div>
+
+
+  <!-- ====================================
+       SECTION 4 — Day 4 : Destructuring
+  ===================================== -->
+  <div class="section" id="s4">
+
+    <div class="section-header" onclick="toggle('s4')">
+      <span class="day-tag tag-4">Day 4</span>
+      <h2>Destructuring — unpack arrays and objects easily</h2>
+      <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-body">
+
+      <p class="note">
+        Topics covered:
+        <span class="concept">array destructuring</span>
+        <span class="concept">object destructuring</span>
+        <span class="concept">rename</span>
+        <span class="concept">default value</span>
+      </p>
+
+      <div class="code-block"><span class="cmt">// Array Destructuring</span>
+<span class="cmt">// Old way:</span>
+<span class="kw">let</span> <span class="var">first</span>  <span class="op">=</span> <span class="var">colors</span>[<span class="num">0</span>];
+<span class="kw">let</span> <span class="var">second</span> <span class="op">=</span> <span class="var">colors</span>[<span class="num">1</span>];
+
+<span class="cmt">// New way - one line:</span>
+<span class="kw">let</span> <span class="var">colors</span> <span class="op">=</span> [<span class="str">"red"</span>, <span class="str">"green"</span>, <span class="str">"blue"</span>];
+<span class="kw">let</span> [<span class="var">first</span>, <span class="var">second</span>, <span class="var">third</span>] <span class="op">=</span> <span class="var">colors</span>;
+
+<span class="cmt">// Object Destructuring</span>
+<span class="cmt">// Old way:</span>
+<span class="kw">let</span> <span class="var">name</span> <span class="op">=</span> <span class="var">person</span>.<span class="var">name</span>;
+<span class="kw">let</span> <span class="var">age</span>  <span class="op">=</span> <span class="var">person</span>.<span class="var">age</span>;
+
+<span class="cmt">// New way - one line:</span>
+<span class="kw">let</span> <span class="var">person</span> <span class="op">=</span> { <span class="var">name</span>: <span class="str">"Ali"</span>, <span class="var">age</span>: <span class="num">20</span> };
+<span class="kw">let</span> { <span class="var">name</span>, <span class="var">age</span> } <span class="op">=</span> <span class="var">person</span>;
+
+<span class="cmt">// Default value if property does not exist</span>
+<span class="kw">let</span> { <span class="var">country</span> <span class="op">=</span> <span class="str">"Pakistan"</span> } <span class="op">=</span> <span class="var">person</span>;</div>
+
+      <div class="practice-label">✏️ Your turn — edit the code and click Run</div>
+      <textarea id="t4"></textarea>
+
+      <div class="btn-row">
+        <button class="btn-run"   onclick="runCode('t4', 'o4')">▶ Run</button>
+        <button class="btn-reset" onclick="resetCode('t4', 4)">↺ Reset</button>
+        <button class="btn-hint"  onclick="toggleHint('h4')">💡 Hint</button>
+      </div>
+
+      <div class="hint-box" id="h4">
+💡 Array: let [a, b] = [1, 2]  → a=1, b=2
+💡 Object: let { name, age } = person
+💡 Default: let { city = "Lahore" } = obj  (used if city missing)
+💡 Rename: let { name: studentName } = obj  (now use studentName)</div>
+
+      <div class="output info" id="o4">// Output will appear here...</div>
+
+    </div>
+  </div>
+
+
+  <!-- ====================================
+       SECTION 5 — Day 5 : Combined
+  ===================================== -->
+  <div class="section" id="s5">
+
+    <div class="section-header" onclick="toggle('s5')">
+      <span class="day-tag tag-1">Day 5</span>
+      <h2>🏆 Combined Challenge — use everything together</h2>
+      <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-body">
+
+      <p class="note">
+        This exercise uses <strong>all concepts from Day 1 to Day 4</strong> together in one real example.
+      </p>
+
+      <textarea id="t5" style="min-height: 320px;"></textarea>
+
+      <div class="btn-row">
+        <button class="btn-run"   onclick="runCode('t5', 'o5')">▶ Run</button>
+        <button class="btn-reset" onclick="resetCode('t5', 5)">↺ Reset</button>
+        <button class="btn-hint"  onclick="toggleHint('h5')">💡 Hint</button>
+      </div>
+
+      <div class="hint-box" id="h5">
+💡 Arrow function with default: const fn = (x, y = 10) => x - y
+💡 .filter() with condition: products.filter(p => p.inStock === true)
+💡 Destructure in .map(): products.map(({ name, price }) => ...)
+💡 Spread to copy object keys: { ...obj1, newKey: value }</div>
+
+      <div class="output info" id="o5">// Output will appear here...</div>
+
+    </div>
+  </div>
+
+
+</div><!-- end .container -->
+
+<!-- Link to our JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
