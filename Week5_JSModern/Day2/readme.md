@@ -12,4 +12,3 @@ Single Parameter | No parentheses needed for one parameter
 No Parameters    | Empty `()` required when no parameters 
 Multiline        | Use `{}` and `return` for multiple lines 
 With Arrays      | Cleaner use inside `.map()`, `.filter()` etc. 
-

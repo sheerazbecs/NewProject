@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheeraz Ahmed | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Sheeraz.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">Available for Freelance Work</div>
+        <h1 class="hero-name">Sheeraz<br><span>Ahmed</span></h1>
+        <p class="hero-role">Web Developer</p>
+        <p class="hero-tagline">I craft clean, fast, and modern websites that help businesses grow online. From pixel-perfect designs to fully functional web apps — let's build something great together.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num">1+</div><div class="stat-label">Year Experience</div></div>
+          <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Projects Done</div></div>
+          <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Client Satisfaction</div></div>
+        </div>
+      </div>
+      <div class="hero-avatar">SA</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid reveal">
+        <div class="about-img-wrap">
+          <div class="about-initials">SA</div>
+          <div class="about-icon">💻</div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate about Building<br>Exceptional Web Experiences</h2>
+          <div class="divider"></div>
+          <p>Hi, I'm <strong>Sheeraz Ahmed</strong> — a dedicated Web Developer with 1 year of hands-on experience building modern, responsive, and user-friendly web applications.</p>
+          <p>I specialize in front-end development using <strong>HTML, CSS, JavaScript</strong>, and <strong>React</strong>. Whether it's a landing page, an e-commerce platform, or a dynamic web app, I bring ideas to life with clean code and attention to detail.</p>
+          <p>I'm passionate about delivering high-quality work on time, communicating clearly with clients, and continuously improving my craft. Let's collaborate and build something remarkable!</p>
+          <div class="about-chips">
+            <span class="chip">Problem Solver</span>
+            <span class="chip">Clean Coder</span>
+            <span class="chip">Detail-Oriented</span>
+            <span class="chip">Fast Learner</span>
+            <span class="chip">Client-Focused</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-tag">My Expertise</span>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <p class="section-sub">A focused toolkit built through real projects and continuous learning.</p>
+      <div class="skills-grid reveal" id="skillsGrid">
+        <div class="skill-card"><div class="skill-icon">🎨</div><div class="skill-name">HTML5 &amp; CSS3</div><div class="skill-desc">Semantic markup, responsive layouts, animations, Flexbox &amp; Grid mastery.</div><div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div><div class="skill-pct">90%</div></div>
+        <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">JavaScript (ES6+)</div><div class="skill-desc">DOM manipulation, APIs, async/await, event handling &amp; modern JS patterns.</div><div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div><div class="skill-pct">80%</div></div>
+        <div class="skill-card"><div class="skill-icon">⚛️</div><div class="skill-name">React.js</div><div class="skill-desc">Component architecture, hooks, state management &amp; building SPAs.</div><div class="skill-bar"><div class="skill-fill" data-pct="72"></div></div><div class="skill-pct">72%</div></div>
+        <div class="skill-card"><div class="skill-icon">📱</div><div class="skill-name">Responsive Design</div><div class="skill-desc">Mobile-first approach, media queries, cross-browser compatible interfaces.</div><div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div><div class="skill-pct">88%</div></div>
+        <div class="skill-card"><div class="skill-icon">🔧</div><div class="skill-name">Git &amp; Version Control</div><div class="skill-desc">Source control, branching, collaboration workflows with GitHub.</div><div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div><div class="skill-pct">70%</div></div>
+        <div class="skill-card"><div class="skill-icon">🚀</div><div class="skill-name">Web Performance</div><div class="skill-desc">Optimization, lazy loading, fast-loading pages that rank &amp; convert better.</div><div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div><div class="skill-pct">75%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-inner">
+      <span class="section-tag">Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">A selection of real-world projects that demonstrate my skills and approach.</p>
+      <div class="projects-grid reveal">
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1A3A6B,#2C7BE5);">🛒</div>
+          <div class="project-body">
+            <div class="project-tag">E-Commerce</div>
+            <div class="project-title">ShopEase — Online Store</div>
+            <div class="project-desc">A fully responsive e-commerce web application with product listings, shopping cart, user authentication, and a clean checkout flow.</div>
+            <div class="project-tech"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">React</span></div>
+            <a href="#contact" class="project-link">Request Similar Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0A4D2E,#0E7C4A);">📊</div>
+          <div class="project-body">
+            <div class="project-tag">Dashboard</div>
+            <div class="project-title">AdminPro — Analytics Dashboard</div>
+            <div class="project-desc">A modern admin dashboard featuring real-time data charts, user management tables, and a fully responsive sidebar navigation.</div>
+            <div class="project-tech"><span class="tech-badge">React</span><span class="tech-badge">CSS3</span><span class="tech-badge">Chart.js</span></div>
+            <a href="#contact" class="project-link">Request Similar Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#4A1A6B,#9B35E5);">🎯</div>
+          <div class="project-body">
+            <div class="project-tag">Landing Page</div>
+            <div class="project-title">LaunchKit — Business Landing Page</div>
+            <div class="project-desc">A high-converting business landing page with smooth animations, call-to-action sections, testimonials, pricing table and contact form.</div>
+            <div class="project-tech"><span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span></div>
+            <a href="#contact" class="project-link">Request Similar Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-inner">
+      <span class="section-tag">What I Offer</span>
+      <h2 class="section-title">Services I Provide</h2>
+      <p class="section-sub">End-to-end web development services tailored to your business needs.</p>
+      <div class="divider"></div> 
+      <div class="services-grid reveal">
+        <div class="service-card"><div class="service-icon">🌐</div><div class="service-title">Website Development</div><div class="service-desc">Clean, fast, and responsive websites built from scratch to match your brand and goals.</div></div>
+        <div class="service-card"><div class="service-icon">🛍️</div><div class="service-title">E-Commerce Stores</div><div class="service-desc">Full-featured online stores with cart, checkout, and product management functionality.</div></div>
+        <div class="service-card"><div class="service-icon">⚛️</div><div class="service-title">React Applications</div><div class="service-desc">Dynamic, single-page apps with smooth interactions and modern component architecture.</div></div>
+        <div class="service-card"><div class="service-icon">📱</div><div class="service-title">Responsive Design</div><div class="service-desc">Mobile-first development ensuring your site looks perfect on every screen size.</div></div>
+        <div class="service-card"><div class="service-icon">🔧</div><div class="service-title">Bug Fixing &amp; Support</div><div class="service-desc">Quick identification and resolution of front-end issues, layout bugs, and performance problems.</div></div>
+        <div class="service-card"><div class="service-icon">✨</div><div class="service-title">UI/UX Implementation</div><div class="service-desc">Turning Figma or design mockups into pixel-perfect, interactive web pages.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-sub">Have a project in mind? I'd love to hear about it. Send me a message and let's build something great!</p>
+      <div class="divider"></div>
+      <div class="contact-wrap reveal">
+        <div class="contact-info">
+          <h3>Ready to start<br>your project?</h3>
+          <p>I'm currently available for freelance projects on Upwork and other platforms. Whether you need a simple landing page or a full web application, I'll deliver quality work on time.</p>
+          <div class="contact-item"><div class="contact-item-icon">✉️</div><div class="contact-item-text"><span class="contact-item-label">Email</span><a href="mailto:sheeraz.becs@gmail.com">sheeraz.becs@gmail.com</a></div></div>
+          <div class="contact-item"><div class="contact-item-icon">🌍</div><div class="contact-item-text"><span class="contact-item-label">Location</span><span>Available Worldwide (Remote)</span></div></div>
+          <div class="contact-item"><div class="contact-item-icon">⏱️</div><div class="contact-item-text"><span class="contact-item-label">Response Time</span><span>Within 24 hours</span></div></div>
+        </div>
+        <div class="contact-form">
+          <div id="formContent">
+            <div class="form-row">
+              <div class="form-group"><label>Your Name</label><input type="text" id="fname" placeholder="John Smith" /></div>
+              <div class="form-group"><label>Email Address</label><input type="email" id="femail" placeholder="john@email.com" /></div>
+            </div>
+            <div class="form-group"><label>Project Type</label>
+              <select id="ftype">
+                <option value="">Select a service...</option>
+                <option>Website Development</option>
+                <option>E-Commerce Store</option>
+                <option>React Application</option>
+                <option>Landing Page</option>
+                <option>Bug Fixing / Support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Project Details</label><textarea id="fmsg" placeholder="Describe your project, goals, and any specific requirements..."></textarea></div>
+            <button class="btn-submit" onclick="submitForm()">Send Message 🚀</button>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="check">✅</div>
+            <h4>Message Sent!</h4>
+            <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed &amp; Built by <strong>Sheeraz Ahmed</strong> &nbsp;|&nbsp; Web Developer</p>
+    <p style="margin-top:0.3rem;">© 2025 Sheeraz Ahmed. All rights reserved.</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="JS/main.js"></script>
+
+</body>
+</html>
